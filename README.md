@@ -75,6 +75,8 @@ The application will be available at `http://localhost:8080`.
 
 ### Frontend
 - Navigate to `http://localhost:8080/chat` to access the chat page.
+- ![image](https://github.com/user-attachments/assets/333b7e22-7e34-4331-8bff-a0d0e405b827)
+
 - Enter a question in the input box and press the "Send" button (or Enter key).
 - The AI's response will appear in the chat window.
 
@@ -115,9 +117,6 @@ src/main/resources/static
 ---
 
 ## Troubleshooting
-- **Error: "Connection refused at 127.0.0.1:8080"**:
-  - Ensure the Spring Boot application is running.
-
 - **Frontend does not display properly**:
   - Check Thymeleaf template paths and ensure CSS/JS files are loaded correctly.
 
