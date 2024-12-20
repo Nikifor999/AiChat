@@ -13,9 +13,9 @@ This project demonstrates how to build a simple chat application using Spring Bo
 
 ## Prerequisites
 - Java 17 or later.
-- Maven or Gradle for dependency management.
+- Maven dependency management.
 - A working knowledge of Spring Boot and Thymeleaf.
-- Node.js (if you need to install additional frontend libraries).
+- Langchain4j
 
 ---
 
@@ -45,20 +45,11 @@ cd <repository-directory>
 ```bash
 mvn clean install
 ```
-#### Gradle:
-```bash
-gradle build
-```
 
 ### 3. Run the Application
 ```bash
 mvn spring-boot:run
 ```
-OR
-```bash
-java -jar target/<your-app-name>.jar
-```
-
 The application will be available at `http://localhost:8080`.
 
 ---
@@ -71,7 +62,6 @@ The application will be available at `http://localhost:8080`.
   Example Request:
   ```json
   {
-      "userId": 1,
       "question": "What is Java?"
   }
   ```
@@ -116,7 +106,7 @@ src/main/resources/static
 ## Customization
 1. **AI Backend**:
    - Modify `AiConfig.java` to change the AI model or configuration.
-   - Update the API key in `AiConfig` with your own key.
+   - Update the API key in `AiConfig` with your own key or use "demo" key.
 
 2. **Frontend**:
    - Enhance `chat.html` for a more advanced UI.
@@ -134,14 +124,4 @@ src/main/resources/static
 - **AI response contains Markdown syntax (e.g., `**bold**`)**:
   - Render Markdown in the frontend using a library like `marked.js`.
   - Alternatively, strip Markdown formatting from backend responses.
-
----
-
-## License
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-## Acknowledgments
-Special thanks to the [Java Master YouTube Channel](https://www.youtube.com/watch?v=KX1BuokLLpg&ab_channel=JavaMaster) for inspiration and guidance on building the chat functionality.
 
